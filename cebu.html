@@ -11,27 +11,25 @@
     <link rel="stylesheet" href="styles/css/app.css" />
   </head>
 
-  <body class="puerto-body" data-barba="wrapper">
+  <body class="puerto-body">
     <!-- ***************************************** -->
     <div class="mobile-view">
       <h1>YOUR BROWSER WINDOW TOO NARROW.</h1>
     </div>
     <div class="nav">
       <div class="nav-links information-links">
-        <p><a href="information.html">INFORMATION</a></p>
+        <p><a class="changeColor" href="information.html">INFORMATION</a></p>
       </div>
       <div class="nav-links home-links">
-        <p><a href="index.html">32°CPH</a></p>
+        <p><a class="changeColor" href="index.html">32°CPH</a></p>
       </div>
       <div class="nav-links take-action-links">
-        <p><a href="actions.html">TAKE ACTION</a></p>
+        <p><a class="changeColor" href="actions.html">TAKE ACTION</a></p>
       </div>
     </div>
-    <div
-      data-barba="container"
-      data-barba-namespace="cebu"
-      class="scrolling-container"
-    >
+    <div class="circle"><a href="actions.html">ACT NOW</a></div>
+
+    <div class="scrolling-container">
       <div class="puerto-container">
         <!-- ***************************************** -->
         <div class="puerto-img-hero">
@@ -57,7 +55,12 @@
               <img src="./images/puerto princesa/haat-3.jpg" alt="image" />
             </div>
             <div class="second-showCase-right-img">
-              <img src="./images/puerto princesa/haat-2.jpg" alt="image" />
+              <img
+                data-scroll
+                data-scroll-speed="2"
+                src="./images/puerto princesa/haat-2.jpg"
+                alt="image"
+              />
             </div>
             <!-- *************************** -->
 
@@ -92,16 +95,27 @@
 
           <!-- *************************** -->
           <div class="section-img">
-            <img src="./images/puerto princesa/haat-4.jpg" alt="img" />
+            <img
+              data-scroll
+              data-scroll-speed="2"
+              src="./images/puerto princesa/haat-4.jpg"
+              alt="img"
+            />
           </div>
           <div class="spacer"></div>
           <div class="spacer"></div>
           <!-- *************************** -->
           <div class="puerto-third-showcase">
             <div class="puerto-third-showcase-title">
-              <h1>``Luxuriant natural beauty``</h1>
+              <h1 data-scroll data-scroll-speed="2">
+                ``Luxuriant natural beauty``
+              </h1>
             </div>
-            <div class="puerto-third-showcase-img">
+            <div
+              class="puerto-third-showcase-img"
+              data-scroll
+              data-scroll-speed="1"
+            >
               <img src="./images/puerto princesa/haat-5.jpg" alt="img" />
             </div>
           </div>
@@ -120,7 +134,11 @@
             <div class="puerto-fourth-showcase-first-img">
               <img src="./images/puerto princesa/haat-6.jpg" alt="image" />
             </div>
-            <div class="puerto-fourth-showcase-second-img">
+            <div
+              data-scroll
+              data-scroll-speed="2"
+              class="puerto-fourth-showcase-second-img"
+            >
               <img src="./images/puerto princesa/haat-7.jpg" alt="image" />
             </div>
             <div class="three-img">
@@ -192,6 +210,12 @@
     </div>
 
     <!-- ***************************************** -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.6.1/dist/locomotive-scroll.min.js"></script>
     <script src="js/app.js"></script>
   </body>

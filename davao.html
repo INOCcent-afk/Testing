@@ -11,27 +11,24 @@
     <link rel="stylesheet" href="styles/css/app.css" />
   </head>
 
-  <body class="puerto-body" data-barba="wrapper">
+  <body class="puerto-body">
     <!-- ***************************************** -->
     <div class="mobile-view">
       <h1>YOUR BROWSER WINDOW TOO NARROW.</h1>
     </div>
     <div class="nav">
       <div class="nav-links information-links">
-        <p><a href="information.html">INFORMATION</a></p>
+        <p><a class="changeColor" href="information.html">INFORMATION</a></p>
       </div>
       <div class="nav-links home-links">
-        <p><a href="index.html">32°CPH</a></p>
+        <p><a class="changeColor" href="index.html">32°CPH</a></p>
       </div>
       <div class="nav-links take-action-links">
-        <p><a href="actions.html">TAKE ACTION</a></p>
+        <p><a class="changeColor" href="actions.html">TAKE ACTION</a></p>
       </div>
     </div>
-    <!-- <div
-      data-barba="container"
-      data-barba-namespace="davao"
-      class="scrolling-container"
-    > -->
+    <div class="circle"><a href="actions.html">ACT NOW</a></div>
+
     <div class="scrolling-container">
       <div class="puerto-container">
         <!-- ***************************************** -->
@@ -213,6 +210,12 @@
     </div>
 
     <!-- ***************************************** -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.6.1/dist/locomotive-scroll.min.js"></script>
     <script src="js/app.js"></script>
   </body>
